@@ -62,7 +62,7 @@ class NoVariableVariablesRule extends Rule
             }
 
             $this->file->next();
-            $this->file->next();               
+            $this->file->next();
         }
     }
 }

@@ -5,7 +5,7 @@ Roadmap (tasks listed in decreasing priority)
 * Port "interesting" rules from phpcs
 * write a source code highlighter that highlights violations in the source code and attaches the error message as popup
 * write output statistics that aggregate how often each rule has been violated (these are the rules you must teach the developers)
-* trySeekTokenId -> seekTokenId 
+* trySeekTokenId -> seekTokenId
 
 Rules to add (in no particular order, just a collection of ideas)
 

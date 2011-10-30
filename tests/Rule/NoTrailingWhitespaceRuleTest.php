@@ -58,7 +58,7 @@ class NoTrailingWhitespaceRuleTest extends AbstractRuleTest
         $rule->check($this->file, $this->result);
 
         $this->assertTrue($this->result->hasViolations());
-        
+
         $this->assertEquals(8, $this->result->getNumberOfViolations());
 
         $violations = $this->result->getViolations('test.php');

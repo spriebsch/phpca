@@ -62,7 +62,7 @@ class NoCarriageReturnsRuleTest extends AbstractRuleTest
 
         $configuration = new Configuration(__DIR__);
         $configuration->setLineEndings("\r");
-        
+
         $rule = new NoCarriageReturnsRule();
         $rule->setConfiguration($configuration);
         $this->assertFalse($rule->check($this->file, $this->result));
@@ -77,12 +77,12 @@ class NoCarriageReturnsRuleTest extends AbstractRuleTest
 
         $configuration = new Configuration(__DIR__);
         $configuration->setLineEndings("\n");
-        
+
         $rule = new NoCarriageReturnsRule();
         $rule->setConfiguration($configuration);
         $this->assertTrue($rule->check($this->file, $this->result));
     }
-    
+
     /**
      * @covers \spriebsch\PHPca\Rule\NoCarriageReturnsRule
      */
@@ -92,7 +92,7 @@ class NoCarriageReturnsRuleTest extends AbstractRuleTest
 
         $configuration = new Configuration(__DIR__);
         $configuration->setLineEndings("\n");
-        
+
         $rule = new NoCarriageReturnsRule();
         $rule->setConfiguration($configuration);
         $rule->check($this->file, $this->result);
@@ -109,7 +109,7 @@ class NoCarriageReturnsRuleTest extends AbstractRuleTest
 
         $configuration = new Configuration(__DIR__);
         $configuration->setLineEndings("\n");
-        
+
         $rule = new NoCarriageReturnsRule();
         $rule->setConfiguration($configuration);
         $rule->check($this->file, $this->result);

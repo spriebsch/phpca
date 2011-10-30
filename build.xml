@@ -41,7 +41,7 @@
             <arg value="--configuration phpunit.xml"/>
         </exec>
     </target>
-    
+
    <target name="apidoc" depends="init">
         <exec executable="phpdoc" failonerror="true">
             <arg value="-d"/>

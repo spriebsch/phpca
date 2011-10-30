@@ -51,7 +51,7 @@ class TokenFilterIteratorTest extends \PHPUnit_Framework_TestCase
     public function testAccept()
     {
         $file = Tokenizer::tokenize('filename', "<?php \n\n function hello()\n{\n    print 'hello world';\n} \n ?>");
-        
+
         $it = new TokenFilterIterator($file, T_FUNCTION);
 
         $result = array();
