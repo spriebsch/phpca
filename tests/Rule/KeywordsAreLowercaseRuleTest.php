@@ -55,28 +55,28 @@ class KeywordsAreLowercaseRuleTest extends AbstractRuleTest
         $this->init(__DIR__ . '/../_testdata/non_lowercase.php');
 
         $rule = new KeywordsAreLowercaseRule();
-        $rule->check($this->file, $this->result);        
-        
+        $rule->check($this->file, $this->result);
+
         $this->assertTrue($this->result->hasViolations());
         $this->assertEquals(7, $this->result->getNumberOfViolations());
-        
+
         $violations = $this->result->getViolations('test.php');
 
         // Function
         $this->assertEquals(11, $violations[0]->getLine());
-        
+
         // CLASS
         $this->assertEquals(15, $violations[1]->getLine());
-        
+
         // Public
         $this->assertEquals(17, $violations[2]->getLine());
-        
+
         // Protected
         $this->assertEquals(21, $violations[3]->getLine());
-        
+
         // Private
         $this->assertEquals(25, $violations[4]->getLine());
-        
+
         // interFace
         $this->assertEquals(30, $violations[5]->getLine());
 

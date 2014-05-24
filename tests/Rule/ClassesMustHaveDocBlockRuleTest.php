@@ -67,7 +67,7 @@ class ClassesMustHaveDocBlockRuleTest extends AbstractRuleTest
 
     /**
      * One class and no docblock in the file.
-     * 
+     *
      * @covers \spriebsch\PHPca\Rule\ClassesMustHaveDocBlockRule
      */
     public function testReportsViolationWhenFileContainsNoDocBlock()
@@ -79,7 +79,7 @@ class ClassesMustHaveDocBlockRuleTest extends AbstractRuleTest
 
         $this->assertTrue($this->result->hasViolations());
     }
-    
+
     /**
      * @covers \spriebsch\PHPca\Rule\ClassesMustHaveDocBlockRule
      */

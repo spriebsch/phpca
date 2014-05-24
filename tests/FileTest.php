@@ -54,7 +54,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
     {
         $file = new File('filename', 'sourcecode');
     }
-	
+
     /**
      * @covers spriebsch\PHPca\File::getFilename
      */
@@ -80,7 +80,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
     {
         $file = Tokenizer::tokenize('test.php', file_get_contents(__DIR__ . '/_testdata/File/namespaces.php'));
     	$this->assertEquals(array('A\\B', 'B\\C', 'D\\E\\F'), $file->getNamespaces());
-    }    	
+    }
 
     /**
      * @covers spriebsch\PHPca\File::getNamespaces
@@ -89,7 +89,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
     {
         $file = Tokenizer::tokenize('test.php', file_get_contents(__DIR__ . '/_testdata/File/namespaces_curly.php'));
         $this->assertEquals(array('A\\B', 'B\\C', 'D\\E\\F'), $file->getNamespaces());
-    }       
+    }
 
     /**
      * @covers spriebsch\PHPca\File::getClasses
@@ -98,7 +98,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
     {
         $file = Tokenizer::tokenize('test.php', file_get_contents(__DIR__ . '/_testdata/File/classes.php'));
         $this->assertEquals(array('A', 'B', 'C'), $file->getClasses());
-    }       
+    }
 
     /**
      * @covers spriebsch\PHPca\File::getFunctions
@@ -108,7 +108,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
         $file = Tokenizer::tokenize('test.php', file_get_contents(__DIR__ . '/_testdata/File/functions.php'));
 
         $this->assertEquals(array('a', 'b', 'c'), $file->getFunctions());
-    }       
+    }
 
     /**
      * @covers spriebsch\PHPca\File::getMethods
@@ -118,7 +118,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
         $file = Tokenizer::tokenize('test.php', file_get_contents(__DIR__ . '/_testdata/File/functions.php'));
 
         $this->assertEquals(array('x', 'y', 'z', 'a', 'b', 'c'), $file->getMethods('A'));
-    }       
+    }
 
     /**
      * @covers spriebsch\PHPca\File::getMethods
@@ -128,7 +128,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
         $file = Tokenizer::tokenize('test.php', file_get_contents(__DIR__ . '/_testdata/File/functions.php'));
 
         $this->assertEquals(array('a', 'b'), $file->getMethods('B'));
-    }       
+    }
 
     /**
      * @covers spriebsch\PHPca\File::__toString

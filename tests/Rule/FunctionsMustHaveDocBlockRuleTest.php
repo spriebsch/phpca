@@ -67,7 +67,7 @@ class FunctionsMustHaveDocBlockRuleTest extends AbstractRuleTest
 
     /**
      * One function and no docblock in the file.
-     * 
+     *
      * @covers \spriebsch\PHPca\Rule\FunctionsMustHaveDocBlockRule
      */
     public function testReportsViolationWhenFileContainsNoDocBlock()
@@ -79,7 +79,7 @@ class FunctionsMustHaveDocBlockRuleTest extends AbstractRuleTest
 
         $this->assertTrue($this->result->hasViolations());
     }
-    
+
     /**
      * @covers \spriebsch\PHPca\Rule\FunctionsMustHaveDocBlockRule
      */

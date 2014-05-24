@@ -13,11 +13,11 @@ class A
     static public function x()
     {
     }
-    
+
     static protected function y()
     {
     }
-    
+
     static private function z()
     {
     }
@@ -25,11 +25,11 @@ class A
 	public function a()
 	{
 	}
-	
+
 	protected function b()
 	{
 	}
-	
+
 	private function c()
 	{
 	}

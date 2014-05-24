@@ -8,13 +8,13 @@
  *
  *   * Redistributions of source code must retain the above copyright notice,
  *     this list of conditions and the following disclaimer.
- * 
+ *
  *   * Redistributions in binary form must reproduce the above copyright notice,
  *     this list of conditions and the following disclaimer in the documentation
  *     and/or other materials provided with the distribution.
  *
  *   * Neither the name of Stefan Priebsch nor the names of contributors
- *     may be used to endorse or promote products derived from this software 
+ *     may be used to endorse or promote products derived from this software
  *     without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
@@ -24,7 +24,7 @@
  * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
  * OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
  * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
  * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
@@ -166,7 +166,7 @@ class ResultTest extends \PHPUnit_Framework_TestCase
         $t1 = new Token(T_OPEN_TAG, '<?php', 5);
         $violation1 = new Violation('testfile', 'error message', $t1);
         $result->addMessage($violation1);
-        
+
         $t2 = new Token(T_OPEN_TAG, '<?php', 3);
         $violation2 = new Violation('testfile', 'another error message', $t2);
         $result->addMessage($violation2);
@@ -188,7 +188,7 @@ class ResultTest extends \PHPUnit_Framework_TestCase
         $t1 = new Token(T_OPEN_TAG, '<?php', 5, 9);
         $violation1 = new Violation('testfile', 'error message', $t1);
         $result->addMessage($violation1);
-        
+
         $t2 = new Token(T_OPEN_TAG, '<?php', 5, 4);
         $violation2 = new Violation('testfile', 'another error message', $t2);
         $result->addMessage($violation2);

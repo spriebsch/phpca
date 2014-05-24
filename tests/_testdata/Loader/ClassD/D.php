@@ -2,7 +2,7 @@
 
 namespace spriebsch\PHPca\Tests;
 
-class D 
+class D
 {
 }
 ?>

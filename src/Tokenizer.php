@@ -203,7 +203,7 @@ class Tokenizer
             }
 
             $id = $tokenObj->getId();
-            
+
             if ($id == T_SEMICOLON) {
                 if ($waitForFunctionBegin) {
                     $functionCurlyLevel = $level;
